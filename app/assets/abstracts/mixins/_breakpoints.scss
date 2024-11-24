@@ -1,0 +1,11 @@
+///////////////////////////////////////
+/// Mixins de breakpoint
+///////////////////////////////////////
+
+@use '../variables/breakpoints' as *;
+
+@mixin breakpoint-desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}

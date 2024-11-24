@@ -1,0 +1,16 @@
+///////////////////////////////////////
+/// Mixins de container
+///////////////////////////////////////
+
+@use './breakpoints' as *;
+
+@mixin container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include breakpoint-desktop {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
