@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/eslint', '@nuxt/fonts'],
 
-  css: ['~/assets/scss/main.scss'],
+  css: ['/assets/scss/main.scss'],
 
   // Compatibilidade com Nuxt4
   future: {
