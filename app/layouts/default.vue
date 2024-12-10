@@ -1,10 +1,7 @@
 <template>
-  <ComponentsLayoutHeader />
-  <Slot />
-  <ComponentsLayoutFooter />
+  <div>
+    <LayoutHeader />
+    <Slot />
+    <LayoutFooter />
+  </div>
 </template>
-
-<script lang="ts" setup>
-  import ComponentsLayoutHeader from '~/components/Layouts/Header/index.vue'
-  import ComponentsLayoutFooter from '~/components/Layouts/Footer/index.vue'
-</script>
