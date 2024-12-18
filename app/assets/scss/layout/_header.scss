@@ -1,0 +1,64 @@
+@use '../abstracts' as *;
+
+.layout-header {
+  position: sticky;
+  top: 0;
+  background: #b9ff66;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+
+    @include breakpoint-desktop {
+      height: 10rem;
+    }
+    @include container; // isso aqui tem um media, então ele tem que vir depois
+  }
+
+  .mobile-logo {
+    display: block;
+
+    @include breakpoint-desktop {
+      display: none;
+    }
+  }
+
+  .desktop-logo {
+    display: none;
+
+    @include breakpoint-desktop {
+      display: flex;
+    }
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+
+    @include breakpoint-desktop {
+      display: none;
+    }
+  }
+
+  .desktop-menu {
+    display: none;
+
+    @include breakpoint-desktop {
+      display: block;
+    }
+  }
+
+  .menu-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    @include typography-sm-desktop;
+
+    > :last-child {
+      border: 1px black solid;
+      padding: 1rem 2rem;
+      border-radius: 0.75rem;
+    }
+  }
+}
