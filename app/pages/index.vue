@@ -1,6 +1,9 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Hello Would</h1>
+    <LayoutCards />
+    <LayoutLogos />
+    <LayoutContent />
   </div>
 </template>
 

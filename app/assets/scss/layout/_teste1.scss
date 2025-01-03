@@ -1,0 +1,57 @@
+@use '../abstracts' as *;
+
+.container {
+  height: 5rem;
+  align-items: center;
+  @include breakpoint-desktop {
+    height: 10rem;
+  }
+  @include container;
+}
+
+.card1 {
+  font-size: 34px;
+  height: 165px;
+  background-color: gold;
+  padding: 20px;
+  gap: 10px;
+  @include breakpoint-desktop {
+    display: flex;
+  }
+}
+
+.card2 {
+  height: 165px;
+  gap: 10px;
+  background-color: gold;
+  @include breakpoint-desktop {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.primary {
+  background: #191a23;
+  border-radius: 6px;
+  width: 300px;
+  color: white;
+}
+
+.card2 img {
+  @include breakpoint-desktop {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.service-gray {
+  border: 1 1 1 4 solid;
+  border-radius: 0.5;
+}
