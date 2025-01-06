@@ -11,10 +11,11 @@
       <p>Search engine optimization</p>
       <img src="/assets/imagens/services/seta001.jpg" />
       <img src="/assets/imagens/services/service001.jpg" />
-      <img />
     </div>
     <div class="service-green">
       <p>Pay-per-click advertising</p>
+      <img src="/assets/imagens/services/seta001.jpg" />
+      <img src="/assets/imagens/services/service001.jpg" />
     </div>
   </div>
 </template>
