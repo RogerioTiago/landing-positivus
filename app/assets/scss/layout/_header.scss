@@ -3,7 +3,8 @@
 .layout-header {
   position: sticky;
   top: 0;
-  background: #b9ff66;
+  background: white;
+  z-index: 100;
 
   .container {
     display: flex;
@@ -14,7 +15,7 @@
     @include breakpoint-desktop {
       height: 10rem;
     }
-    @include container; // isso aqui tem um media, então ele tem que vir depois
+    @include container;
   }
 
   .mobile-logo {

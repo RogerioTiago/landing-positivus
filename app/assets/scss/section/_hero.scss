@@ -1,0 +1,80 @@
+@use '../abstracts' as *;
+
+.section-hero {
+  .container {
+    @include container;
+  }
+
+  /**
+   * Mobile
+   */
+  .mobile-hero {
+    display: block;
+
+    @include breakpoint-desktop {
+      display: none;
+    }
+
+    .title {
+      @include typography-xl-mobile;
+      font-weight: 500;
+      line-height: 3.429rem;
+    }
+
+    .text {
+      @include typography-xs-mobile;
+      font-weight: 400;
+      line-height: 1.5rem;
+      padding: 10px 0;
+    }
+
+    .button {
+      @include typography-sm-desktop;
+      background: #191a23;
+      border-radius: 14px;
+      height: 60px;
+      width: 100%;
+      color: white;
+    }
+  }
+
+  /**
+   * Desktop
+   */
+  .desktop-hero {
+    display: none;
+
+    @include breakpoint-desktop {
+      display: grid;
+      gap: 10rem;
+      grid-template-columns: 5fr 7fr;
+    }
+
+    .left-items {
+      display: flex;
+      flex-direction: column;
+      gap: 2.188rem;
+    }
+
+    .button {
+      @include typography-sm-desktop;
+      background: #191a23;
+      border-radius: 14px;
+      width: 300px;
+      height: 60px;
+      color: white;
+    }
+
+    .title {
+      @include typography-xl-desktop;
+      font-weight: 500;
+      line-height: 4.785rem;
+    }
+
+    .text {
+      @include typography-sm-desktop;
+      font-weight: 400;
+      line-height: 1.75rem;
+    }
+  }
+}
