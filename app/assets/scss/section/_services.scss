@@ -1,0 +1,113 @@
+@use '../abstracts' as *;
+
+.services {
+  .container {
+    @include container;
+
+    .header {
+      display: flex;
+      gap: 2rem;
+      flex-flow: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 2rem;
+
+      @include breakpoint-desktop {
+        text-align: left;
+        flex-flow: row;
+      }
+
+      .title {
+        background-color: $green;
+        @include typography-lg-mobile;
+        font-weight: 500;
+        line-height: 2.871rem;
+        padding: 0 0.5rem;
+
+        @include breakpoint-desktop {
+          @include typography-lg-desktop;
+          line-height: 3.188rem;
+        }
+      }
+
+      .subtitle {
+        @include typography-xs-mobile;
+        font-weight: 400;
+        line-height: 1.436rem;
+
+        @include breakpoint-desktop {
+          @include typography-xs-desktop;
+          line-height: 1.5rem;
+          max-width: 50%;
+        }
+      }
+    }
+
+    .cards {
+      display: grid;
+      gap: 2rem;
+
+      @include breakpoint-desktop {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .service-gray {
+        border: 1px solid $black;
+        border-bottom: 4px solid $black;
+        border-radius: 45px;
+        background-color: #f3f3f3;
+        display: grid;
+        gap: 2rem;
+        padding: 1rem;
+        position: relative;
+
+        @include breakpoint-desktop {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .card-title {
+          background: $green;
+          padding: 0 0.5rem;
+          width: fit-content;
+        }
+
+        .card-image-wrapper {
+          display: flex;
+          justify-content: flex-end;
+
+          @include breakpoint-desktop {
+            justify-content: center;
+          }
+        }
+
+        .card-image {
+          max-width: 100%;
+          max-height: 100%;
+        }
+
+        .card-overlays {
+          position: absolute;
+          bottom: 1rem;
+          left: 1rem;
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+
+          .arrow {
+          }
+
+          .span {
+          }
+        }
+      }
+
+      .service-green {
+        border: 1px solid $black;
+        border-bottom: 4px solid $black;
+        border-radius: 45px;
+        background-color: #b9ff66;
+        padding: 1rem;
+      }
+    }
+  }
+}
