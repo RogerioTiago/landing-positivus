@@ -1,0 +1,57 @@
+@use '../abstracts' as *;
+
+.contact {
+  .container {
+    @include container;
+    background: #f3f3f3;
+    height: 232px;
+  }
+  .button {
+    @include typography-sm-desktop;
+    background: #191a23;
+    border-radius: 14px;
+    height: 60px;
+    width: 100%;
+    color: white;
+  }
+
+  .title {
+    @include typography-lg-mobile;
+    font-weight: 500;
+    line-height: 2.871rem;
+    padding: 0 0.5rem;
+    display: block;
+
+    @include breakpoint-desktop {
+      @include typography-lg-desktop;
+      line-height: 3.188rem;
+    }
+  }
+
+  .subtitle {
+    @include typography-xs-mobile;
+    font-weight: 400;
+    line-height: 1.436rem;
+    display: block;
+
+    @include breakpoint-desktop {
+      @include typography-xs-desktop;
+      line-height: 1.5rem;
+      max-width: 50%;
+    }
+  }
+
+  .texto {
+    display: block;
+    @include breakpoint-desktop {
+      display: flex;
+    }
+  }
+
+  .image {
+    display: block;
+    @include breakpoint-desktop {
+      display: flex;
+    }
+  }
+}

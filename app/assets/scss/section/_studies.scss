@@ -1,0 +1,48 @@
+@use '../abstracts' as *;
+
+.studies {
+  .container {
+    @include container;
+    background: #f3f3f3;
+    border-radius: 30px;
+
+    .title {
+      @include typography-lg-mobile;
+      font-weight: 500;
+      line-height: 2.871rem;
+      padding: 0 0.5rem;
+      display: block;
+      background: #b9ff66;
+
+      @include breakpoint-desktop {
+        @include typography-lg-desktop;
+        line-height: 3.188rem;
+      }
+    }
+
+    .subtitle {
+      @include typography-xs-mobile;
+      font-weight: 400;
+      line-height: 1.436rem;
+      display: block;
+
+      @include breakpoint-desktop {
+        @include typography-xs-desktop;
+        line-height: 1.5rem;
+        max-width: 50%;
+      }
+    }
+
+    .card {
+      background-color: black;
+      display: flex;
+      width: 390px;
+      border-radius: 5px;
+      color: white;
+      gap: 15px;
+      @include breakpoint-desktop {
+        justify-content: space-between;
+      }
+    }
+  }
+}
