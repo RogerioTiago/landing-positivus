@@ -3,16 +3,28 @@
 .contact {
   .container {
     @include container;
+  }
+
+  .card {
+    display: block;
+    gap: 2rem;
     background: #f3f3f3;
     height: 232px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    @include breakpoint-desktop {
+      display: flex;
+    }
   }
   .button {
     @include typography-sm-desktop;
+    display: block;
     background: #191a23;
     border-radius: 14px;
     height: 60px;
     width: 100%;
     color: white;
+    margin-bottom: 2rem;
   }
 
   .title {
@@ -20,6 +32,7 @@
     font-weight: 500;
     line-height: 2.871rem;
     padding: 0 0.5rem;
+
     display: block;
 
     @include breakpoint-desktop {
@@ -30,28 +43,30 @@
 
   .subtitle {
     @include typography-xs-mobile;
+    display: block;
+    margin-bottom: 2rem;
     font-weight: 400;
     line-height: 1.436rem;
-    display: block;
 
     @include breakpoint-desktop {
       @include typography-xs-desktop;
-      line-height: 1.5rem;
-      max-width: 50%;
     }
   }
 
   .texto {
     display: block;
+    margin-bottom: 2rem;
     @include breakpoint-desktop {
       display: flex;
+      flex-direction: column;
     }
   }
 
   .image {
-    display: block;
+    display: none;
     @include breakpoint-desktop {
       display: flex;
+      width: 100%;
     }
   }
 }
