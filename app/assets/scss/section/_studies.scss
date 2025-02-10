@@ -33,13 +33,26 @@
       }
     }
 
-    .card {
-      background-color: black;
+    .cards {
       display: flex;
-      width: 390px;
-      border-radius: 5px;
       color: white;
       gap: 15px;
+      padding: 0 0.5rem;
+
+      @include breakpoint-desktop {
+        justify-content: space-between;
+      }
+    }
+
+    .card {
+      display: flex;
+      background-color: black;
+      border-radius: 45px;
+      gap: 15px;
+      padding: 0 0.5rem;
+      width: 350px;
+      height: 252px;
+      margin-left: 15px;
       @include breakpoint-desktop {
         justify-content: space-between;
       }
