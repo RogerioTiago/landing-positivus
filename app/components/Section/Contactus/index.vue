@@ -9,17 +9,17 @@
       </div>
 
       <form>
-        <input type="radio">Say Hi </input> <input type="radio">Get a Quote </input>
-        <label>Name</label> <br>
-        <input type="text"> <br>
-        <label>Email*</label> <br>
-        <input type="text"> <br>
-        <label>Message*</label> <br>
-        <input type="textarea"> <br>
+        <label><input type="radio" />Say Hi</label>
+        <label><input type="radio" />Get a Quote</label>
+        <label>Name</label> <br />
+        <input type="text" /> <br />
+        <label>Email*</label> <br />
+        <input type="text" /> <br />
+        <label>Message*</label> <br />
+        <input type="textarea" /> <br />
 
-      <button> Send Message</button> 
+        <button>Send Message</button>
       </form>
-
 
       <div class="image">
         <img class="arrow" src="/assets/imagens/contatosimgs.jpg" />

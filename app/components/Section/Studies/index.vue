@@ -15,6 +15,7 @@
             resulted in a 50% increase in website traffic and a 25% increase in
             sales.
           </p>
+          <a hr="#">Learn More </a>
         </div>
         <div class="card">
           <p>
@@ -22,6 +23,7 @@
             resulted in a first page ranking for key keywords and a 200%
             increase in organic traffic.
           </p>
+          <a hr="#">Learn More </a>
         </div>
         <div class="card">
           <p>
@@ -29,6 +31,7 @@
             campaign that increased followers by 25% and generated a 20%
             increase in online sales.
           </p>
+          <a hr="#">Learn More </a>
         </div>
       </div>
     </div>

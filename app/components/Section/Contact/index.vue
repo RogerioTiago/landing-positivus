@@ -8,11 +8,10 @@
             Contact us today to learn more about how our digital marketing
             services can help your business grow and succeed online.
           </p>
-          <button class="button">Get your proposal</button>
+          <button class="button">Get your free proposal</button>
         </div>
-        <div class="image">
-          <img class="arrow" src="/assets/imagens/contatosimgs.jpg" />
-        </div>
+
+        <img class="image" src="/assets/imagens/contact.png" />
       </div>
     </div>
   </section>

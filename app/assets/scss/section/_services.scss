@@ -50,172 +50,135 @@
       @include breakpoint-desktop {
         grid-template-columns: 1fr 1fr;
       }
+    }
 
-      .service-gray {
-        border: 1px solid $black;
-        border-bottom: 4px solid $black;
-        border-radius: 45px;
-        background-color: #f3f3f3;
-        display: grid;
-        gap: 2rem;
-        padding: 1rem;
-        position: relative;
+    .card {
+      min-height: 310px;
+      padding: 50px;
+      border: 1px solid $black;
+      border-bottom: 4px solid $black;
+      border-radius: 45px;
+      background-color: $green;
+      display: grid;
+      gap: 2rem;
+      position: relative;
+      cursor: pointer;
 
-        @include breakpoint-desktop {
-          grid-template-columns: 1fr 1fr;
-        }
-
-        .card-title {
-          background: $green;
-          padding: 0 0.5rem;
-          width: fit-content;
-          height: fit-content;
-        }
-
-        .card-image-wrapper {
-          display: flex;
-          justify-content: flex-end;
-
-          @include breakpoint-desktop {
-            justify-content: center;
-          }
-        }
-
-        .card-image {
-          max-width: 100%;
-          max-height: 100%;
-        }
-
-        .card-overlays {
-          position: absolute;
-          bottom: 1rem;
-          left: 1rem;
-          display: flex;
-          gap: 0.5rem;
-          align-items: center;
-
-          .arrow {
-          }
-
-          .span {
-            display: none;
-            @include breakpoint-desktop {
-              display: block;
-            }
-          }
-        }
+      @include breakpoint-desktop {
+        grid-template-columns: 1fr 1fr;
       }
 
-      .service-green {
-        border: 1px solid $black;
-        border-bottom: 4px solid $black;
-        border-radius: 45px;
-        background-color: #b9ff66;
-        padding: 1rem;
-        display: grid;
-        gap: 2rem;
-        padding: 1rem;
-        position: relative;
-
-        @include breakpoint-desktop {
-          grid-template-columns: 1fr 1fr;
-        }
-
-        .card-title {
-          background: white;
-          padding: 0 0.5rem;
-          width: fit-content;
-          height: fit-content;
-        }
-
-        .card-image-wrapper {
-          display: flex;
-          justify-content: flex-end;
-
-          @include breakpoint-desktop {
-            justify-content: center;
-          }
-        }
-
-        .card-image {
-          max-width: 100%;
-          max-height: 100%;
-        }
-
-        .card-overlays {
-          position: absolute;
-          bottom: 1rem;
-          left: 1rem;
-          display: flex;
-          gap: 0.5rem;
-          align-items: center;
-
-          .arrow {
-          }
-
-          .span {
-            display: none;
-            @include breakpoint-desktop {
-              display: block;
-            }
-          }
+      &:hover {
+        .arrow {
+          transform: rotate(25deg);
         }
       }
-      .service-black {
-        border: 1px solid $black;
-        border-bottom: 4px solid $black;
-        border-radius: 45px;
-        background-color: #191a23;
-        padding: 1rem;
-        display: grid;
-        gap: 2rem;
-        padding: 1rem;
-        position: relative;
+    }
 
+    .card-title {
+      color: $black;
+      width: fit-content;
+    }
+
+    .card-title-background {
+      display: block;
+      padding: 7px;
+      border-radius: 7px;
+      width: fit-content;
+    }
+
+    .card-image-wrapper {
+      display: flex;
+      justify-content: flex-end;
+
+      @include breakpoint-desktop {
+        justify-content: center;
+      }
+    }
+
+    .card-image {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .card-title {
+      @include typography-md-desktop;
+      font-weight: 500;
+      line-height: 38.28px;
+    }
+
+    .card-overlays {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      .arrow {
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .span {
+        display: none;
         @include breakpoint-desktop {
-          grid-template-columns: 1fr 1fr;
+          display: block;
+          font-family: 'Space Grotesk', sans-serif;
+          font-size: 1.25rem;
+          font-weight: 400;
         }
+      }
+    }
 
-        .card-title {
-          background: white;
-          padding: 0 0.5rem;
-          width: fit-content;
-          height: fit-content;
-        }
+    /**
+     * Cores para card cinza
+     */
+    .service-gray {
+      background-color: $grey;
 
-        .card-image-wrapper {
-          display: flex;
-          justify-content: flex-end;
+      .card-title-background {
+        background: $green;
+      }
+    }
 
-          @include breakpoint-desktop {
-            justify-content: center;
-          }
-        }
+    /**
+     * Cores para card verde
+     */
+    .service-green {
+      background-color: $green;
 
-        .card-image {
-          max-width: 100%;
-          max-height: 100%;
-        }
+      .card-title-background {
+        background: $white;
+      }
+    }
 
-        .card-overlays {
-          position: absolute;
-          bottom: 1rem;
-          left: 1rem;
-          display: flex;
-          gap: 0.5rem;
-          align-items: center;
+    /**
+     * Cores para card cinza escuro
+     */
+    .service-dark {
+      background-color: $dark-grey;
 
-          .arrow {
-          }
+      .card-title-background {
+        background: $white;
+      }
 
-          .span {
-            display: none;
-            @include breakpoint-desktop {
-              display: block;
-              color: white;
-            }
-          }
-        }
+      .span {
+        color: $white;
+      }
+    }
+
+    /**
+     * Cores para card cinza escuro variante fundo verde
+     */
+    .service-dark-green {
+      background-color: $dark-grey;
+
+      .card-title-background {
+        background: $green;
+      }
+
+      .span {
+        color: $white;
       }
     }
   }

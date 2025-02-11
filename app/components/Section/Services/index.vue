@@ -9,70 +9,85 @@
         </p>
       </header>
       <div class="cards">
-        <div class="service-gray">
+        <!-- Card Cinza -->
+        <div class="card service-gray">
           <h3 class="card-title">
-            Search engine <br />
-            optimization
+            <span class="card-title-background">Search engine</span>
+            <span class="card-title-background">optimization</span>
           </h3>
 
           <div class="card-image-wrapper">
             <img
               class="card-image"
-              src="/assets/imagens/services/service001.jpg"
+              src="/assets/imagens/services/service001.png"
             />
           </div>
           <div class="card-overlays">
-            <img class="arrow" src="/assets/imagens/services/seta001.jpg" />
+            <svg-arrow-dark class="arrow" />
             <span class="span">Learn more</span>
           </div>
         </div>
-        <div class="service-green">
+
+        <!-- Card Verde -->
+        <div class="card service-green">
           <h3 class="card-title">
-            Pay-per-click <br />
-            advertising
+            <span class="card-title-background">Pay-per-click</span>
+            <span class="card-title-background">advertising</span>
           </h3>
           <div class="card-image-wrapper">
             <img
               class="card-image"
-              src="/assets/imagens/services/service002.jpg"
+              src="/assets/imagens/services/service002.png"
             />
           </div>
           <div class="card-overlays">
-            <img class="arrow" src="/assets/imagens/services/seta001.jpg" />
+            <svg-arrow-dark class="arrow" />
             <span class="span">Learn more</span>
           </div>
         </div>
-        <div class="service-black">
+
+        <!-- Card Cinza Escuro -->
+        <div class="card service-dark">
           <h3 class="card-title">
-            Social Media <br />
-            Marketing
+            <span class="card-title-background">Social Media</span>
+            <span class="card-title-background">Marketing</span>
           </h3>
           <div class="card-image-wrapper">
             <img
               class="card-image"
-              src="/assets/imagens/services/service003.jpg"
+              src="/assets/imagens/services/service003.png"
             />
           </div>
           <div class="card-overlays">
-            <img class="arrow" src="/assets/imagens/services/seta002.jpg" />
+            <svg-arrow-white class="arrow" />
             <span class="span">Learn more</span>
           </div>
         </div>
-        <div class="service-gray">
-          <h3 class="card-title">E-mail <br />marketing</h3>
+
+        <!-- Card Cinza -->
+        <div class="card service-gray">
+          <h3 class="card-title">
+            <span class="card-title-background">E-mail</span>
+            <span class="card-title-background">marketing</span>
+          </h3>
           <div class="card-image-wrapper">
             <img
               class="card-image"
-              src="/assets/imagens/services/service004.jpg"
+              src="/assets/imagens/services/service004.png"
             />
           </div>
           <div class="card-overlays">
-            <img class="arrow" src="/assets/imagens/services/seta001.jpg" />
+            <svg-arrow-dark class="arrow" />
             <span class="span">Learn more</span>
           </div>
         </div>
-        <div class="service-green">
-          <h3 class="card-title">Content <br />Creation</h3>
+
+        <!-- Card Verde -->
+        <div class="card service-green">
+          <h3 class="card-title">
+            <span class="card-title-background">Content</span>
+            <span class="card-title-background">Creation</span>
+          </h3>
           <div class="card-image-wrapper">
             <img
               class="card-image"
@@ -80,20 +95,25 @@
             />
           </div>
           <div class="card-overlays">
-            <img class="arrow" src="/assets/imagens/services/seta001.jpg" />
+            <svg-arrow-dark class="arrow" />
             <span class="span">Learn more</span>
           </div>
         </div>
-        <div class="service-black">
-          <h3 class="card-title">Analytics and <br />Tracking</h3>
+
+        <!-- Card Cinza Escuro -->
+        <div class="card service-dark-green">
+          <h3 class="card-title">
+            <span class="card-title-background">Analytics and</span>
+            <span class="card-title-background">Tracking</span>
+          </h3>
           <div class="card-image-wrapper">
             <img
               class="card-image"
-              src="/assets/imagens/services/service006.jpg"
+              src="/assets/imagens/services/service006.png"
             />
           </div>
           <div class="card-overlays">
-            <img class="arrow" src="/assets/imagens/services/seta002.jpg" />
+            <svg-arrow-white class="arrow" />
             <span class="span">Learn more</span>
           </div>
         </div>
