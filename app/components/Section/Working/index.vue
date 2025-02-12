@@ -2,7 +2,10 @@
   <section class="working">
     <div class="container">
       <div class="working-title">
-        <h1 class="title">Our Working Process</h1>
+        <h1>
+          <span class="title">Our Working </span>
+          <span class="title">Process </span>
+        </h1>
 
         <p class="text">Step-by-Step Guide to Achieving Your Business Goals</p>
       </div>
@@ -11,7 +14,10 @@
           <p>01</p>
           <p>Consultation</p>
           <div class="hidden">
-            During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.  
+            During the initial consultation, we will discuss your business goals
+            and objectives, target audience, and current marketing efforts. This
+            will allow us to understand your needs and tailor our services to
+            best fit your requirements.
           </div>
         </div>
         <div class="card">

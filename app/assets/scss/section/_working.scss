@@ -5,6 +5,34 @@
     @include container;
   }
 
+  .title {
+    @include typography-lg-mobile;
+    font-weight: 500;
+    line-height: 2.871rem;
+    padding: 0 0.5rem;
+    display: block;
+    background: #b9ff66;
+
+    @include breakpoint-desktop {
+      @include typography-lg-desktop;
+      line-height: 3.188rem;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .cards {
+    gap: 30px;
+  }
+  .card {
+    border: black solid 3px;
+    border-bottom: black solid 5px;
+    border-radius: 1.3rem;
+    margin: 10px;
+  }
+
   /**
    * Mobile
    */

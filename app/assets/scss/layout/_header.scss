@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 .layout-header {
-  position: sticky;
+  position: block;
   top: 0;
   background: white;
   z-index: 100;
