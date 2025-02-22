@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxt/eslint": "^0.7.1",
     "@nuxt/fonts": "^0.10.2",
+    "@nuxt/ui": "^2.21.0",
     "nuxt": "^3.14.1592",
     "prettier": "^3.3.3",
     "sass": "^1.81.0",

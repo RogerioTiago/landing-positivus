@@ -6,5 +6,6 @@
     <SectionContact />
     <SectionStudies />
     <SectionWorking />
+    <SectionProcess />
   </div>
 </template>
